@@ -1,0 +1,68 @@
+HOW TO USE : ImagePPMController
+Our program supports the script commands as listed below
+- quit
+- load
+- save
+- vertical-flip
+- horizontal-flip
+- brighten
+- darken
+- value-component
+- luma-component
+- intensity-component
+- red-component
+- blue-component
+- green-component
+- blur
+- greyscale
+- sepia
+- sharpen
+In order to use any of the methods on an image, user must first load an image file utilizing the
+load script command as follows: "load filename referralname"
+Any of the other commands should be referenced as: "commandname referralname newreferralname"
+The exceptions are brighten and darken, needing a number value to brighten or darken an image by,
+which should be referenced as: "commandname numbervalue referralname newreferralname"
+Our program supports reading the contents of .txt files to perform commands. As long as the user
+inputs a script containing a valie .txt file name, our program will read the contents.
+An example being: "asdsa sad Assignment4Text.txt asdas". As long as Assignment4Text.txt is
+accessible by the program,the contents will be read.
+An example of a list of script commands to run through the program using the tester.jpg file
+included in our program is:
+load tester.jpg test
+brighten 10 test test-brighter
+greyscale test test-greyscale
+save test-bright.jpg test-brighter
+save test-greyscale.jpg test-greyscale
+quit
+----------------------------------------------------------------------------
+
+HOW TO USE : GUI
+This program is a graphical program that allows the user to interact with an app like program.
+The user needs to upload an image first, either an PPM, PNG, BPM, or JPG.
+The user has a scroll option they can use to scroll through the image that they are using. 
+Once they upload it, they can save it directly with a new name, as well as choose the image path
+through the pop up, or they can use any of the editing/filtering options, which include:
+- Blur
+- Brighten
+- Darken
+- Flip Horizontally
+- Flip Vertically
+- GreyScale
+- GreyScale Blue
+- GreyScale Green
+- GreyScale Intensity
+- GreyScale Lima
+- GreyScale Red
+- GreyScale Value
+- Sepia
+- Sharpen
+The user has the option to layer all of these filters on top of each other prior to saving their
+final image. The user also has access to the current edited image as well as the histogram which
+show the values for red, blue, green and intensity. However, they cannot do anything with the
+histogram. With features like brighten and darken, the user is forced to type in an integer,
+which has a value showing how much they would like to brighten or darken the image. If the user
+does not input an integer, there will be no effect on the image. If a user tries to apply
+a filter or save when an image is not loaded, there will be a pop-up message which does not allow
+tells the user that they can not save or filter that image.
+Once a user chooses to save, they can assign a name to the image and also select the pathway they
+would like to save the file to.
